@@ -1,0 +1,18 @@
+{%- comment -%} Generated from the `abstract` fields in _data/speakers.yml. {%- endcomment -%}
+
+{%- assign with_abstracts = site.data.speakers | where_exp: "sp", "sp.abstract" %}
+{%- if with_abstracts.size > 0 %}
+<div class="abstracts">
+  {%- for sp in with_abstracts %}
+  <article class="abstract">
+    <h3>{{ sp.name }}<span class="speaker-affil">({{ sp.affiliation }})</span></h3>
+    {%- if sp.talk %}
+    <p class="abstract-title">{{ sp.talk }}</p>
+    {%- endif %}
+    <div class="prose">{{ sp.abstract | markdownify }}</div>
+  </article>
+  {%- endfor %}
+</div>
+{%- else %}
+<p class="tba">tba</p>
+{%- endif %}

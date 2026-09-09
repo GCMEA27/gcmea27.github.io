@@ -1,0 +1,11 @@
+# Programme.  One block per day; each day has a list of items.
+#
+#   time     required -- shown in the left-hand column
+#   title    required -- talk title, or "Coffee", "Lunch", ...
+#   speaker  optional
+#   room     optional
+#   break    optional -- set to true to render the row in a muted style
+#
+# If the programme is not ready, comment out or delete everything below: an
+# empty file makes the Schedule section print "tba".
+

@@ -1,0 +1,23 @@
+{%- comment -%} Generated from _data/speakers.yml -- edit that file, not this one. {%- endcomment -%}
+
+{%- if site.data.speakers and site.data.speakers.size > 0 %}
+<ul class="speaker-list">
+  {%- for sp in site.data.speakers %}
+  <li>
+    <span class="speaker-name">
+      {%- if sp.url -%}
+        <a href="{{ sp.url }}">{{ sp.name }}</a>
+      {%- else -%}
+        {{ sp.name }}
+      {%- endif -%}
+    </span>
+    <span class="speaker-affil">({{ sp.affiliation }})</span>
+    {%- if sp.talk %}
+    <span class="speaker-talk">{{ sp.talk }}</span>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- else %}
+<p class="tba">tba</p>
+{%- endif %}

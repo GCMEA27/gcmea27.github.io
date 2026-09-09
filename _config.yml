@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Conference details.  Edit everything in this block; the site reads from it.
+# After changing this file, restart `bundle exec jekyll serve`.
+# ---------------------------------------------------------------------------
+
+conference:
+  # Short name used in the browser tab and the top-left of the navigation bar
+  short_name: "GCMEA"
+  # Full title, shown as the main heading on the front page
+  title: "Geometric and Computational Methods in Enumerative Algebra"
+  # Human-readable date range, shown under the title
+  dates: "14–18 June 2027"
+  # Short location line, shown under the dates
+  location: "Technische Universität Berlin"
+  # One or two sentences describing the meeting
+  blurb: 
+
+# Sections shown on the front page, in order.  Comment a line out to hide the
+# section and its navigation entry.
+sections:
+  - id: speakers
+    label: "Speakers"
+  - id: schedule
+    label: "Schedule"
+  - id: abstracts
+    label: "Abstracts"
+  - id: registration
+    label: "Registration"
+  - id: venue
+    label: "Venue"
+  - id: organizers
+    label: "Organisers"
+
+# ---------------------------------------------------------------------------
+# Site / build settings
+# ---------------------------------------------------------------------------
+
+title: "Geometric and Computational Methods in Enumerative Algebra"
+description: "Geometric and Computational Methods in Enumerative Algebra, 14-18 June 2027."
+
+# If the site lives at https://<user>.github.io/<repo>/ then set
+#   url:     "https://<user>.github.io"
+#   baseurl: "/<repo>"
+# If it lives at the root of a domain, leave baseurl empty.
+url: ""
+baseurl: ""
+
+# Set to false to drop the MathJax script (a little faster to load).
+mathjax: true
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

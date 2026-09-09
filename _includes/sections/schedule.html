@@ -1,0 +1,25 @@
+{%- comment -%} Generated from _data/schedule.yml.  Empty that file to show "tba". {%- endcomment -%}
+
+{%- if site.data.schedule and site.data.schedule.size > 0 %}
+{%- for day in site.data.schedule %}
+<div class="day">
+  <h3>{{ day.day }}</h3>
+  <table class="schedule">
+    <tbody>
+      {%- for item in day.items %}
+      <tr{% if item.break %} class="is-break"{% endif %}>
+        <td class="time">{{ item.time }}</td>
+        <td class="what">
+          {%- if item.speaker %}<span class="who">{{ item.speaker }}</span>{% endif %}
+          <span class="talk">{{ item.title }}</span>
+          {%- if item.room %}<span class="room">{{ item.room }}</span>{% endif %}
+        </td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+{%- endfor %}
+{%- else %}
+<p class="tba">tba</p>
+{%- endif %}

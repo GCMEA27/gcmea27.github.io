@@ -1,0 +1,74 @@
+# Invited speakers.
+#
+#   name         required
+#   affiliation  required
+#   url          optional -- links the speaker's name to their homepage
+#   talk         optional -- talk title; omit (or use "tba") if not yet known
+#   abstract     optional -- appears in the Abstracts section; supports Markdown
+#                            and, if enabled in _config.yml, LaTeX via MathJax
+#
+# Use a `>` block for multi-paragraph abstracts, as in the first entry.
+
+- name: Katharina Jochemko
+  affiliation: KTH Royal Institute of Technology
+  url: https://www.kth.se/profile/jochemko
+
+- name: Tobias Rossmann
+  affiliation: University of Galway
+  url: https://torossmann.github.io/
+
+- name: Benjamin Klopsch
+  affiliation: Heinrich Heine University Düsseldorf
+  url: https://reh.math.uni-duesseldorf.de/~klopsch/
+
+- name: Tatiana Smirnova-Nagnibeda
+  affiliation: University of Geneva
+  url: https://www.unige.ch/~tatiana/
+
+- name: Eduard Schesler
+  affiliation: Karlsruhe Institute of Technology
+  url: https://eduardschesler.de/
+
+- name: Andreas Thom
+  affiliation: TUD Dresden University of Technology
+  url: https://andreasthom.github.io/
+
+- name: Michael Joswig
+  affiliation: Technische Universität Berlin
+  url: https://page.math.tu-berlin.de/~joswig/
+
+- name: Daniele Agostini
+  affiliation: University of Tübingen
+  url: https://www.math.uni-tuebingen.de/de/forschung/kombinatorische-algebraische-geometrie/personen/daniele-agostini
+
+- name: Christian Stump
+  affiliation: Ruhr University Bochum
+  url: https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-stump/team/prof-dr-christian-stump/
+
+- name: Matteo Vannacci
+  affiliation: University of Florence
+  url: https://sites.google.com/view/matteovannacci/home
+
+- name: Corentin Bodart
+  affiliation: Oxford University
+  url: https://sites.google.com/view/corentin-bodart
+
+- name: Sean Eberhard
+  affiliation: University of Warwick
+  url: https://seaneberhard.com/
+
+- name: Megan Howarth
+  affiliation: University of Geneva
+  url: https://www.unige.ch/math/en/section/enseignants-et-chercheurs-2/tatiana-smirnova-nagnibeda/megan-howarth
+
+- name: Bianca Marchionna 
+  affiliation: UCLouvain 
+  url: https://sites.google.com/view/bianca-marchionna/home-page
+
+- name: Mima Stanojkovski 
+  affiliation: University of Trento
+  url: https://mima.maths.unitn.it/
+
+- name: Petra Schwer
+  affiliation: Heidelberg University
+  url: https://web.mathi.uni-heidelberg.de/ggt/schwer

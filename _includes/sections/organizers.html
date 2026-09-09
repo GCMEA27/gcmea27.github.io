@@ -1,0 +1,14 @@
+{%- comment -%} Generated from _data/organizers.yml. {%- endcomment -%}
+
+<ul class="organizer-list">
+  {%- for o in site.data.organizers %}
+  <li>
+    {%- if o.url -%}
+      <a href="{{ o.url }}">{{ o.name }}</a>
+    {%- else -%}
+      {{ o.name }}
+    {%- endif -%}
+    <span class="speaker-affil">({{ o.institution }})</span>
+  </li>
+  {%- endfor %}
+</ul>
