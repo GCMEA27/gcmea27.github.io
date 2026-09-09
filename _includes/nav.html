@@ -11,11 +11,6 @@
       {%- for s in site.sections %}
       <a href="{{ '/' | relative_url }}#{{ s.id }}">{{ s.label }}</a>
       {%- endfor %}
-      {%- for p in site.pages %}
-        {%- if p.in_nav %}
-      <a href="{{ p.url | relative_url }}">{{ p.nav_label | default: p.title }}</a>
-        {%- endif %}
-      {%- endfor %}
     </nav>
   </div>
 </header>
