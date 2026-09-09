@@ -1,0 +1,22 @@
+{%- comment -%} Generated from _data/sponsors.yml -- edit that file, not this one. {%- endcomment -%}
+
+{%- if site.data.sponsors and site.data.sponsors.size > 0 %}
+<section class="sponsors" aria-labelledby="sponsors-heading">
+  <div class="wrap">
+    <h2 id="sponsors-heading" class="sponsors-heading">With the support of</h2>
+    <ul class="sponsor-list">
+      {%- for sp in site.data.sponsors %}
+      <li class="sponsor" style="--sponsor-scale: {{ sp.scale | default: 1 }}">
+        {%- if sp.url -%}
+        <a href="{{ sp.url }}" title="{{ sp.name | escape }}">
+          <img src="{{ sp.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ sp.name | escape }}">
+        </a>
+        {%- else -%}
+        <img src="{{ sp.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ sp.name | escape }}">
+        {%- endif -%}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}

@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+# Sponsor logos shown in the band at the bottom of every page.
+#
+#   name:  used as the image alt text and the link title -- always required
+#   logo:  path under assets/img/ (put the file there first)
+#   url:   optional; if present the logo becomes a link
+#   scale: optional; 1 is the default height, use e.g. 0.8 for a logo that
+#          looks too big next to the others, or 1.2 for one that looks small
+#
+# Delete every entry (or the file) to hide the band entirely.
+# ---------------------------------------------------------------------------
+
+- name: "MATH+ Berlin Mathematics Research Center"
+  logo: MATHPLUS-Logo-retina.png
+  url: https://mathplus.de/
+  scale: 1.20

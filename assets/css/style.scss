@@ -248,6 +248,49 @@ tr.is-break td, tr.is-break .talk {
 }
 
 /* ---------------------------------------------------------------------------
+   Sponsor logos
+   --------------------------------------------------------------------------- */
+.sponsors {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.sponsors-heading {
+  margin: 0 0 1.5rem;
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.sponsor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem 3rem;
+}
+
+.sponsor a { display: block; }
+
+.sponsor img {
+  display: block;
+  width: auto;
+  height: calc(3.25rem * var(--sponsor-scale, 1));
+  max-width: 15rem;
+  object-fit: contain;
+}
+
+@media (max-width: 46rem) {
+  .sponsor-list { gap: 1.5rem 2rem; }
+  .sponsor img { height: calc(2.5rem * var(--sponsor-scale, 1)); }
+}
+
+/* ---------------------------------------------------------------------------
    Footer
    --------------------------------------------------------------------------- */
 .site-footer {
